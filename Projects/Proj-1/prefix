@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+# coding: latin-1
+good = "Use SHA-256 instead!"
+evil = "MD5 is perfectly secure!"
+blob = """

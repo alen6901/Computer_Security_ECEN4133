@@ -1,0 +1,8 @@
+"""
+from hashlib import sha256
+z = sha256((blob).encode("latin-1")).hexdigest()
+i = int(z, 16)
+if(i%2 == 0):
+  print(good)
+else:
+  print(evil)

